@@ -613,3 +613,7 @@ h1 {
     display: flex;
     justify-content: end;
   }
+
+  .white-bg {
+    background-color: white;
+  }
