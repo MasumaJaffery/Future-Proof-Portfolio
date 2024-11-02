@@ -1,0 +1,258 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Cards Section */
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: #e8f2f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Card Styling */
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #f0f8fc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    margin-right: 15px;
+}
+
+.card-content h3 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Subtitle for Steps */
+.portfolio-section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Steps Section */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Step Card */
+.step {
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.step-icon {
+    background-color: #48a9e6;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.step p {
+    font-size: 0.9em;
+    color: #666;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.container1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subheading {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.price-info {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.how-it-works {
+    font-size: 1.8em;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Steps Container */
+.steps-container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Step Styles */
+.step {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+}
+
+.step-number {
+    background-color: #5dc2f4;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16%;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    width: inherit;
+}
+
+.step p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Navigation Arrows */
+.arrows {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.arrow {
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.arrow:hover {
+    color: #5dc2f4;
+}
