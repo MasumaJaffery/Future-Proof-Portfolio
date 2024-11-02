@@ -517,3 +517,99 @@ h1 {
 }
 
 
+/* CSS Section */
+.land-investment-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .section-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .investment-cards {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .investment-card {
+    background: #e8f4fb;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    width: max-content;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .testimonial-arrows-move {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+  }
+  
+  .arrow {
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .flex {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .arrow-right {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 10px;
+  }
+  
+  .move {
+    display: flex;
+    justify-content: end;
+  }

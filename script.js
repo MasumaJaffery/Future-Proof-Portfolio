@@ -13,20 +13,35 @@ function toggleFaq(element) {
         arrow.style.transform = 'rotate(0deg)';
     }
 }
-
-const cards = document.querySelector('.cards');
-let scrollPosition = 0;
-
-function scrollLeft() {
-    if (scrollPosition > 0) {
-        scrollPosition -= 260;
-        cards.style.transform = `translateX(-${scrollPosition}px)`;
+document.addEventListener('DOMContentLoaded', function () {
+    const cardsContainer = document.querySelector('.investment-cards');
+    const cards = document.querySelectorAll('.investment-card');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    let currentIndex = 0;
+  
+    function updateCarousel() {
+      const cardWidth = cards[0].offsetWidth + 20; // Card width + gap
+      const offset = -currentIndex * cardWidth;
+      cardsContainer.style.transform = `translateX(${offset}px)`;
     }
-}
-
-function scrollRight() {
-    if (scrollPosition < cards.scrollWidth - cards.clientWidth) {
-        scrollPosition += 260;
-        cards.style.transform = `translateX(-${scrollPosition}px)`;
-    }
-}
+  
+    rightArrow.addEventListener('click', function () {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0; // Loop back to the first card
+      }
+      updateCarousel();
+    });
+  
+    leftArrow.addEventListener('click', function () {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = cards.length - 1; // Loop back to the last card
+      }
+      updateCarousel();
+    });
+  });
+  
