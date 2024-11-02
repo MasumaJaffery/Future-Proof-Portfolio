@@ -508,7 +508,9 @@ h1 {
 
 .faq-answer.open {
     max-height: 100px;
+    text-align: left;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .read-more {

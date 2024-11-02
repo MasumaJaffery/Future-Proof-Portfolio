@@ -69,4 +69,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial setup
     updateCarousel();
+
 });
