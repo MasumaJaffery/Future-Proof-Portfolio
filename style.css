@@ -701,3 +701,10 @@ h1 {
     display: flex;
     justify-content: center; /* Center content horizontally */
 }
+
+/* For screens 768px wide or smaller (standard mobile devices) */
+@media (max-width: 768px) {
+    .faq-items {
+        padding: inherit; /* Reduced padding for smaller screens */
+    }
+}
