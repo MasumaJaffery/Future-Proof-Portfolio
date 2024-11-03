@@ -565,6 +565,22 @@ h1 {
     line-height: 24px;
 }
 
+/* For screens 768px wide or smaller (standard mobile devices) */
+@media (max-width: 768px) {
+    .section-description {
+        padding: 0 2rem; /* Reduced padding for smaller screens */
+    }
+}
+
+/* For extra small screens 480px wide or smaller */
+@media (max-width: 480px) {
+    .section-description {
+        padding: 0 auto; /* Center-align with minimal side padding */
+        text-align: center; /* Optional: center text for a balanced look on very small screens */
+    }
+}
+
+
 .investment-cards {
     display: flex;
     overflow: hidden;
@@ -581,14 +597,37 @@ h1 {
     max-width: 100%; /* Expanded width when moving */
 }
 
+@media (max-width: 768px) {
+    .investment-cards {
+        flex-direction: column; /* Stack cards vertically */
+        max-width: 100%; /* Full width on mobile */
+        left: 0; /* Remove left offset to fit screen */
+        gap: 15px; /* Reduce gap for smaller screens */
+        padding: 10px; /* Add padding for better spacing on small screens */
+    }
+
+    .investment-card {
+        position: relative; /* Remove absolute positioning for easier stacking */
+        max-width: 100%; /* Ensure cards take full width */
+        margin: 0 auto; /* Center cards on mobile */
+        padding: 15px; /* Add padding for readability */
+    }
+
+    .investment-cards.expanded-width {
+        max-width: 100%; /* Full width for expanded view on mobile */
+    }
+}
   
+
+
   .investment-card {
     background: #e8f4fb;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
     height: fit-content;
-    width: 100%;
+    width: 380px;
+    height: fit-content;
     max-width: 800px;
     text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -662,3 +701,11 @@ h1 {
     display: flex;
     justify-content: center; /* Center content horizontally */
 }
+
+/* For screens 768px wide or smaller (standard mobile devices) */
+@media (max-width: 768px) {
+    .faq-items {
+        padding: inherit; /* Reduced padding for smaller screens */
+    }
+}
+
