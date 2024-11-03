@@ -569,10 +569,12 @@ h1 {
     display: flex;
     overflow: hidden;
     width: 100%;
-    max-width: 80%; /* Default width */
-    margin: 0 auto;
+    max-width: 84.8%;
+    margin: inherit;
     gap: 20px;
     transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out;
+    position: relative;
+    left: 250px;
 }
 
 .investment-cards.expanded-width {
